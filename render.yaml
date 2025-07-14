@@ -1,0 +1,14 @@
+services:
+  - name: lead-scoring-backend
+    type: web
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python backend/main.py"
+    envVars:
+      - key: PORT
+        value: "8000"
+    healthCheckPath: "/leads"
+    healthCheckTimeout: 30
+    healthCheckInterval: 5
+    healthCheckRetries: 3
+    healthCheckMethod: "GET"

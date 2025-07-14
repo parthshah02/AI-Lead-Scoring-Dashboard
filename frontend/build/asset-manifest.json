@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/static/js/main.fabe3296.js",
+    "index.html": "/index.html",
+    "main.fabe3296.js.map": "/static/js/main.fabe3296.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.fabe3296.js"
+  ]
+}

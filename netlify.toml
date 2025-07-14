@@ -1,7 +1,10 @@
 [build]
-command = "npm run build"
 base = "frontend"
-publish = "frontend/build"
+command = "npm run build"
+publish = "build"
 
 [build.environment]
-REACT_APP_API_URL = "https://lead-scoring-dashboard.netlify.app/api"
+REACT_APP_API_URL = "https://lead-scoring-backend.onrender.com"
+
+[build.environment.production]
+REACT_APP_API_URL = "https://lead-scoring-backend.onrender.com"
